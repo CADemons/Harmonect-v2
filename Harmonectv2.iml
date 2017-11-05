@@ -8,5 +8,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="ufdw" level="project" />
+    <orderEntry type="library" name="opencv-330" level="project" />
   </component>
 </module>
