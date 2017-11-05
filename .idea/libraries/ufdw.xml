@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ufdw">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/ufdw.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
