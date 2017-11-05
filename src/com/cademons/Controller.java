@@ -1,4 +1,4 @@
-package sample;
+package com.cademons;
 
 public class Controller {
 }
