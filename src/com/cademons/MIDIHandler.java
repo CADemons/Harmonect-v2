@@ -17,13 +17,13 @@ public class MIDIHandler {
         }
     }
 
-    void changeInstrument(int instrument) {synth.getChannels()[0].programChange(instrument);}
+    public void changeInstrument(int instrument) {synth.getChannels()[0].programChange(instrument);}
 
-    void noteOn(short note) {channels[0].noteOn(note, defaultVelocity);}
-    void noteOn(short note, short velocity) {channels[0].noteOn(note, velocity);}
+    public void noteOn(short note) {channels[0].noteOn(note, defaultVelocity);}
+    public void noteOn(short note, short velocity) {channels[0].noteOn(note, velocity);}
 
-    void noteOff(short note) {channels[0].noteOff(note);}
-    void noteOff(short note, short velocity) {channels[0].noteOff(note, velocity);}
-    void allNotesOff() {channels[0].allNotesOff();}
+    public void noteOff(short note) {channels[0].noteOff(note);}
+    public void noteOff(short note, short velocity) {channels[0].noteOff(note, velocity);}
+    public void allNotesOff() {channels[0].allNotesOff();}
 
 }

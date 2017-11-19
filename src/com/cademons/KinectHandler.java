@@ -8,6 +8,7 @@ import edu.ufl.digitalworlds.j4k.VideoFrame;
 public class KinectHandler extends J4KSDK {
 
     VideoFrame videoTexture;
+    int frames = 0;
 
     public KinectHandler () {
         super ();
@@ -24,12 +25,30 @@ public class KinectHandler extends J4KSDK {
 
     public void onDepthFrameEvent(short[] depth_frame, byte[] player_index, float[] XYZ, float[] UV) {
 
-        DepthMap map=new DepthMap(getDepthWidth(),getDepthHeight(),XYZ);
+        short[][] depth_2d = new short[getDepthHeight()][getDepthWidth()];
 
-
-        if (UV!=null) {
-            map.setUV(UV);
+        for (int i = 0; i < depth_frame.length; i++) {
+            int h_idx = i / getDepthHeight();
+            int w_idx = i % getDepthHeight();
+            depth_2d[h_idx][w_idx] = depth_frame[i];
         }
+
+        if (frames++ == 20) {
+            for (short[] line : depth_2d) {
+                for (short depth : line) {
+                    System.out.print(depth);
+                    System.out.print(",");
+                }
+                System.out.println();
+            }
+        }
+
+//        DepthMap map=new DepthMap(getDepthWidth(),getDepthHeight(),XYZ);
+//
+//
+//        if (UV!=null) {
+//            map.setUV(UV);
+//        }
     }
 
     /*The following method will run every time a new skeleton frame
