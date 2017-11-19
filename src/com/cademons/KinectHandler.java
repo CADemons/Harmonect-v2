@@ -26,6 +26,7 @@ public class KinectHandler extends J4KSDK {
 
         DepthMap map=new DepthMap(getDepthWidth(),getDepthHeight(),XYZ);
 
+
         if (UV!=null) {
             map.setUV(UV);
         }
