@@ -1,4 +1,4 @@
-package com.cademons;
+package org.cademons;
 import javax.sound.midi.*;
 
 public class MidiHandler {
@@ -13,7 +13,7 @@ public class MidiHandler {
             synth.open();
             channels = synth.getChannels();
         } catch (MidiUnavailableException e) {
-
+            System.out.println(e);
         }
     }
 
