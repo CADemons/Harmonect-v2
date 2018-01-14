@@ -22,7 +22,7 @@ public class ConfigHandler {
             BufferedReader bufferedReader = new BufferedReader(fileReader);
 
             while((line = bufferedReader.readLine()) !=null) {
-                if(line.equals("/*")) {comment = true}
+                if(line.equals("/*")) {comment = true;}
                 else if(line.equals("/*")) {comment = true;}
                 else if(comment == false && line.length() > 4) {
                     if(line.contains("Instrument")) {config.put("instrument", line.split(":")[1]);}
