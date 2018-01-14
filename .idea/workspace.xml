@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed0f2ea7-825b-42e5-b9d4-18c5533775c4" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/linux_freenect__1_0.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Harmonectmavenv2.iml" afterPath="$PROJECT_DIR$/Harmonectmavenv2.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -173,7 +175,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/jna-platform-4.5.1.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/linux-freenect--1.0.jar!/" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -722,7 +724,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>jna-platform-4.5.1</last-edited>
+          <last-edited>linux-freenect--1.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
