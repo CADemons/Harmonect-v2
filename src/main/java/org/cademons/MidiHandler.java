@@ -1,13 +1,13 @@
 package com.cademons;
 import javax.sound.midi.*;
 
-public class MIDIHandler {
+public class MidiHandler {
 
     private Synthesizer synth;
     private MidiChannel[] channels;
     private short defaultVelocity = 220;
 
-    public MIDIHandler(int instrument)  {
+    public MidiHandler(int instrument)  {
         try {
             synth = MidiSystem.getSynthesizer();
             synth.open();
